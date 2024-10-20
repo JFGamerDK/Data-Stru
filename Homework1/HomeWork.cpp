@@ -56,9 +56,9 @@ void generatesubsets(vector<string>&s, vector<string>&nowSet, int index, vector<
     allsubsets.push_back(nowSet);
     for (int i = index; i < s.size(); ++i) 
     {
-        nowSet.push_back(s[i]);// 将当前元素加入当前子集
-        generatesubsets(s, nowSet, i + 1, allsubsets);// 递归生成包含当前元素的子集
-        nowSet.pop_back();// 回溯，移除当前元素，继续生成其他子集
+        nowSet.push_back(s[i]);//將目前的元素加入到子集合中
+        generatesubsets(s, nowSet, i + 1, allsubsets);// 遞迴生成包含目前元素的子集
+        nowSet.pop_back();// 回朔，移除當前元素，繼續生成其他子集
     }
 }
 int main()
