@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <string>
+1
 using namespace std;
 long long t=1;
 long long arrack[5][10000];
